@@ -1,20 +1,20 @@
-# One Cloudflare Worker: serves the static site (./frontend) AND the API (/api/*, backed by D1).
-name = "rohith-portfolio"
-main = "worker/src/index.js"
-compatibility_date = "2025-01-01"
-
-[assets]
-directory = "./frontend"
-binding = "ASSETS"
-run_worker_first = ["/api/*"]     # /api/* → Worker code; everything else → static files
-
-[[d1_databases]]
-binding = "DB"
-database_name = "portfolio-db"
-database_id = "PASTE_ID_HERE"   # from: npx wrangler d1 create portfolio-db
-migrations_dir = "database/migrations"
-
-# Secret (set in dashboard → Settings → Variables and Secrets, or `npx wrangler secret put ADMIN_API_KEY`):
-#   ADMIN_API_KEY
-# Optional plain var, only if you call the API from a different origin:
-#   [vars] CORS_ORIGINS = "https://yourdomain.com"
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
+d7e7ef2-a8c3-4a5e-a576-028770f1a11c/
