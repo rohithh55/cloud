@@ -1,0 +1,15 @@
+{
+  "name": "rohith-portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler d1 migrations apply DB --local && wrangler dev",
+    "deploy": "wrangler d1 migrations apply DB --remote && wrangler deploy",
+    "db:create": "wrangler d1 create portfolio-db",
+    "db:migrate:local": "wrangler d1 migrations apply DB --local",
+    "db:migrate:remote": "wrangler d1 migrations apply DB --remote",
+    "db:seed:build": "node database/build-seed.js",
+    "db:console": "wrangler d1 execute DB --remote --command"
+  },
+  "dependencies": { "hono": "^4.6.0" },
+  "devDependencies": { "wrangler": "^4.0.0" }
+}
